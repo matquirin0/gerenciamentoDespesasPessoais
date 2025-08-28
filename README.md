@@ -36,3 +36,4 @@ Este é um projeto simples de console para gerenciar despesas pessoais, ideal pa
     ```
 
 ## 📊 Diagrama UML
+![Diagrama UML](./assets/diagramaUML.png)
