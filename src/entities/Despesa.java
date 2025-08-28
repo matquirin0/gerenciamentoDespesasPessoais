@@ -3,6 +3,10 @@ package entities;
 import java.time.LocalDateTime;
 
 public class Despesa {
+	
+	private static Integer proximoId = 1;
+	
+	
 	private Integer id;
 	private String descricao;
 	private Double valor;
@@ -17,6 +21,9 @@ public class Despesa {
 		this.data = LocalDateTime.now();
 		this.usuario = usuario;
 		this.categoria = categoria;
+		
+		this.id = proximoId;
+		proximoId++;
 	}
 
 	public Integer getId() {

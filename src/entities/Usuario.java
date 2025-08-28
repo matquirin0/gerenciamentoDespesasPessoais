@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
+	
+	private static Integer proximoId = 1;
+	
 	private Integer id;
 	private String nome;
 	private String email;
@@ -13,6 +16,8 @@ public class Usuario {
 		this.nome = nome;
 		this.email = email;
 		this.despesas = new ArrayList<>();
+		this.id = proximoId;
+		proximoId++;
 	}
 
 	public Integer getId() {
@@ -42,4 +47,16 @@ public class Usuario {
 	public List<Despesa> getDespesas(){
 		return despesas;
 	}
+
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id 
+				+ ", "
+				+ "nome=" + nome 
+				+ ", email=" + email 
+				+ ", despesas=" + despesas 
+				+ "]";
+	}
+	
+	
 }
