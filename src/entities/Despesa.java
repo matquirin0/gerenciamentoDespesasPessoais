@@ -8,12 +8,15 @@ public class Despesa {
 	private Double valor;
 	private LocalDateTime data;
 	
+	private Usuario usuario;
+	private Categoria categoria;
 	
-	public Despesa(Integer id, String descricao, Double valor, LocalDateTime data) {
-		this.id = id;
+	public Despesa(String descricao, Double valor, Usuario usuario, Categoria categoria) {
 		this.descricao = descricao;
 		this.valor = valor;
-		this.data = data;
+		this.data = LocalDateTime.now();
+		this.usuario = usuario;
+		this.categoria = categoria;
 	}
 
 	public Integer getId() {
@@ -43,6 +46,23 @@ public class Despesa {
 	public void setData(LocalDateTime data) {
 		this.data = data;
 	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
 	
 	
 }
+	

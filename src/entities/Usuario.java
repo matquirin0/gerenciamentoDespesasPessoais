@@ -35,5 +35,11 @@ public class Usuario {
 		this.email = email;
 	}
 	
-
+	public void addDespesa(Despesa despesa) {
+		this.despesas.add(despesa);
+	}
+	
+	public List<Despesa> getDespesas(){
+		return despesas;
+	}
 }
