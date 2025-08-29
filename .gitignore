@@ -1,0 +1,11 @@
+# Arquivos gerados pelo Java / Eclipse
+bin/
+.settings/
+.classpath
+.project
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
