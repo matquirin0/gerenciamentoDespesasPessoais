@@ -15,6 +15,7 @@ public class Program {
 		
 		u1.addDespesa(d1);
 		System.out.println(d1);
+		
 	}
 	
 }
