@@ -15,12 +15,12 @@ public class Despesa {
 	private Usuario usuario;
 	private Categoria categoria;
 	
-	public Despesa(String descricao, Double valor, Usuario usuario, Categoria categoria) {
+	public Despesa(Usuario usuario,Categoria categoria, String descricao, Double valor ) {
+		this.usuario = usuario;
+		this.categoria = categoria;
 		this.descricao = descricao;
 		this.valor = valor;
 		this.data = LocalDateTime.now();
-		this.usuario = usuario;
-		this.categoria = categoria;
 		
 		this.id = proximoId;
 		proximoId++;
@@ -69,6 +69,14 @@ public class Despesa {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
+
+	@Override
+	public String toString() {
+		return "Despesa [id=" + id + ", descricao=" + descricao + ", valor=" + valor + ", data=" + data + ", usuario="
+				+ usuario + ", categoria=" + categoria + "]";
+	}
+	
+	
 	
 	
 }

@@ -35,5 +35,5 @@ Este é um projeto simples de console para gerenciar despesas pessoais, ideal pa
     java Program
     ```
 
-## 📊 Diagrama UML
+## 📊 Diagrama de Classes de Design
 ![Diagrama UML](./assets/diagramaUML.png)
