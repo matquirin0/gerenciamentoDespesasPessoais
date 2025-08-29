@@ -1,21 +1,26 @@
 package application;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
-import entities.Usuario;
-import entities.Despesa;
 import entities.Categoria;
+import entities.Despesa;
+import entities.Usuario;
 
 public class Program {
 
 	public static void main(String[] args) {
-		Usuario u1 = new Usuario("Matheus", "mpq@gmail.com");
-		Categoria c1 = new Categoria ("iFood");
-		Despesa d1 = new Despesa (u1, c1, "Kiburgão Lanches", 54.50);
+		Usuario u1 = new Usuario ("Matheus", "mpq@gmail.com");
+		Categoria c1 = new Categoria("Alimentação");
+		Categoria c2 = new Categoria("Transporte");
 		
-		u1.addDespesa(d1);
-		System.out.println(d1);
+		Despesa d1 = new Despesa(u1, c1, "Kiburgao", 50.00);
 		
+		List<Despesa> despesas = new ArrayList<>();
+		
+		despesas.add(d1);
+		
+		System.out.println(despesas);
 	}
 	
 }

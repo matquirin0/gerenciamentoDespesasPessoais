@@ -6,7 +6,6 @@ public class Despesa {
 	
 	private static Integer proximoId = 1;
 	
-	
 	private Integer id;
 	private String descricao;
 	private Double valor;
@@ -69,15 +68,10 @@ public class Despesa {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Despesa [id=" + id + ", descricao=" + descricao + ", valor=" + valor + ", data=" + data + ", usuario="
-				+ usuario + ", categoria=" + categoria + "]";
+		return "Despesa [descricao= " + descricao + ", valor= " + valor + ", categoria= " + categoria.toString() + ", usuario= " + usuario.toString() + "]";
 	}
-	
-	
-	
-	
 }
 	

@@ -47,16 +47,10 @@ public class Usuario {
 	public List<Despesa> getDespesas(){
 		return despesas;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id 
-				+ ", "
-				+ "nome=" + nome 
-				+ ", email=" + email 
-				+ ", despesas=" + despesas 
-				+ "]";
+		return nome;
 	}
-	
 	
 }
