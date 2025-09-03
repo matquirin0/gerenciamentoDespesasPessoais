@@ -21,16 +21,20 @@ public class RelatorioService {
 		return;
 		}
 		
+		double totalDespesa = 0;
 		
 		for (Despesa despesa : despesasDoUsuario) {
-			System.out.print(
+			System.out.printf("%-5d | %-20s | %-15s | %-15s\n",  
 			despesa.getId(),
 			despesa.getCategoria(),
 			despesa.getDescricao(),
 			despesa.getValor(),
 			despesa.getData()
 			);
+			
+			totalDespesa += despesa.getValor();
 		}
+		
 	}
 }
 		
