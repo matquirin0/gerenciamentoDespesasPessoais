@@ -7,7 +7,7 @@ import entities.Usuario;
 
 public class RelatorioService {
 		
-		public void imprimirRelatorioDeDespesas (Usuario usuario) {
+		public void imprimirRelatorioDeDespesa (Usuario usuario) {
 			
 			if (usuario == null) {
 				System.out.println("Usuário não encontrado");
